@@ -71,6 +71,7 @@ ios-light-mode-dark-green-alternative:
   app-header-background-color: rgba(48, 89, 71, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -158,6 +159,7 @@ ios-light-mode-dark-green:
   app-header-background-color: rgba(48, 89, 71, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -245,6 +247,7 @@ ios-dark-mode-dark-green-alternative:
   app-header-background-color: rgba(48, 89, 71, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -332,6 +335,7 @@ ios-dark-mode-dark-green:
   app-header-background-color: rgba(48, 89, 71, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -419,6 +423,7 @@ ios-light-mode-light-blue-alternative:
   app-header-background-color: rgba(1, 195, 220, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -506,6 +511,7 @@ ios-light-mode-light-blue:
   app-header-background-color: rgba(1, 195, 220, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -593,6 +599,7 @@ ios-dark-mode-light-blue-alternative:
   app-header-background-color: rgba(1, 195, 220, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -680,6 +687,7 @@ ios-dark-mode-light-blue:
   app-header-background-color: rgba(1, 195, 220, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -767,6 +775,7 @@ ios-light-mode-light-green-alternative:
   app-header-background-color: rgba(114, 188, 139, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -854,6 +863,7 @@ ios-light-mode-light-green:
   app-header-background-color: rgba(114, 188, 139, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -941,6 +951,7 @@ ios-dark-mode-light-green-alternative:
   app-header-background-color: rgba(114, 188, 139, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -1028,6 +1039,7 @@ ios-dark-mode-light-green:
   app-header-background-color: rgba(114, 188, 139, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -1115,6 +1127,7 @@ ios-light-mode-orange-alternative:
   app-header-background-color: rgba(255, 229, 116, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -1202,6 +1215,7 @@ ios-light-mode-orange:
   app-header-background-color: rgba(255, 229, 116, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -1289,6 +1303,7 @@ ios-dark-mode-orange-alternative:
   app-header-background-color: rgba(255, 229, 116, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -1376,6 +1391,7 @@ ios-dark-mode-orange:
   app-header-background-color: rgba(255, 229, 116, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -1463,6 +1479,7 @@ ios-light-mode-blue-red-alternative:
   app-header-background-color: rgba(30, 2, 61, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -1550,6 +1567,7 @@ ios-light-mode-blue-red:
   app-header-background-color: rgba(30, 2, 61, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -1637,6 +1655,7 @@ ios-dark-mode-blue-red-alternative:
   app-header-background-color: rgba(30, 2, 61, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -1724,6 +1743,7 @@ ios-dark-mode-blue-red:
   app-header-background-color: rgba(30, 2, 61, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -1811,6 +1831,7 @@ ios-light-mode-red-alternative:
   app-header-background-color: rgba(234, 88, 63, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -1898,6 +1919,7 @@ ios-light-mode-red:
   app-header-background-color: rgba(234, 88, 63, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -1985,6 +2007,7 @@ ios-dark-mode-red-alternative:
   app-header-background-color: rgba(234, 88, 63, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -2072,6 +2095,7 @@ ios-dark-mode-red:
   app-header-background-color: rgba(234, 88, 63, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -2159,6 +2183,7 @@ ios-light-mode-dark-blue-alternative:
   app-header-background-color: rgba(48, 69, 124, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -2246,6 +2271,7 @@ ios-light-mode-dark-blue:
   app-header-background-color: rgba(48, 69, 124, 0.4)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -2333,6 +2359,7 @@ ios-dark-mode-dark-blue-alternative:
   app-header-background-color: rgba(48, 69, 124, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
@@ -2420,6 +2447,7 @@ ios-dark-mode-dark-blue:
   app-header-background-color: rgba(48, 69, 124, 0.4)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
+  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
