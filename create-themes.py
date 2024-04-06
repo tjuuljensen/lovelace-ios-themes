@@ -44,7 +44,7 @@ for folder, fname in folder_fname:
     fname.parent.mkdir(parents=True, exist_ok=True)
     with fname.open("w") as f:
         f.write("---\n# From https://github.com/basnijholt/lovelace-ios-themes")
-    for background in Path("themes").glob("homekit-bg-*.jpg"):
+    for background in sorted(Path("themes").glob("homekit-bg-*.jpg")):
         color = background.stem.split("homekit-bg-")[-1]
         if color in BACKGROUND_COLORS:
             app_header_background_color = BACKGROUND_COLORS[color]
