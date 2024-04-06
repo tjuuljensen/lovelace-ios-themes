@@ -4,6 +4,9 @@ divider_color:
 ha_card_background:
   dark: rgba(10, 10, 10, 0.4)
   light: rgba(245, 245, 245, 0.4)
+rgb_card_background:
+  dark: rgb(10, 10, 10)
+  light: rgb(245, 245, 245)
 label_badge_red:
   dark: rgba(255, 159, 9, 0.7)
   light: rgba(255, 149, 9, 0.7)
