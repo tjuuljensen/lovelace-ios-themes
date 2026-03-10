@@ -54,6 +54,9 @@ ios-light-mode-blue-red-alternative:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(30, 2, 61, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -117,6 +120,9 @@ ios-light-mode-blue-red:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(30, 2, 61, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -180,6 +186,9 @@ ios-dark-mode-blue-red-alternative:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(30, 2, 61, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -243,6 +252,9 @@ ios-dark-mode-blue-red:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(30, 2, 61, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -306,6 +318,9 @@ ios-light-mode-dark-blue-alternative:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(48, 69, 124, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -369,6 +384,9 @@ ios-light-mode-dark-blue:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(48, 69, 124, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -432,6 +450,9 @@ ios-dark-mode-dark-blue-alternative:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(48, 69, 124, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -495,6 +516,9 @@ ios-dark-mode-dark-blue:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(48, 69, 124, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -558,6 +582,9 @@ ios-light-mode-dark-green-alternative:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(48, 89, 71, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -621,6 +648,9 @@ ios-light-mode-dark-green:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(48, 89, 71, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -684,6 +714,9 @@ ios-dark-mode-dark-green-alternative:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(48, 89, 71, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -747,6 +780,9 @@ ios-dark-mode-dark-green:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(48, 89, 71, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -810,6 +846,9 @@ ios-light-mode-light-blue-alternative:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(1, 195, 220, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -873,6 +912,9 @@ ios-light-mode-light-blue:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(1, 195, 220, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -936,6 +978,9 @@ ios-dark-mode-light-blue-alternative:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(1, 195, 220, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -999,6 +1044,9 @@ ios-dark-mode-light-blue:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(1, 195, 220, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -1062,6 +1110,9 @@ ios-light-mode-light-green-alternative:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(114, 188, 139, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -1125,6 +1176,9 @@ ios-light-mode-light-green:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(114, 188, 139, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -1188,6 +1242,9 @@ ios-dark-mode-light-green-alternative:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(114, 188, 139, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -1251,6 +1308,9 @@ ios-dark-mode-light-green:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(114, 188, 139, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -1314,6 +1374,9 @@ ios-light-mode-orange-alternative:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(255, 229, 116, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -1377,6 +1440,9 @@ ios-light-mode-orange:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(255, 229, 116, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -1440,6 +1506,9 @@ ios-dark-mode-orange-alternative:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(255, 229, 116, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -1503,6 +1572,9 @@ ios-dark-mode-orange:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(255, 229, 116, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -1566,6 +1638,9 @@ ios-light-mode-red-alternative:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(234, 88, 63, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -1629,6 +1704,9 @@ ios-light-mode-red:
   more-info-header-background: rgba(230, 230, 230, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(234, 88, 63, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#FFFFFF"
   code-editor-background-color: "#FFF"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -1692,6 +1770,9 @@ ios-dark-mode-red-alternative:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(234, 88, 63, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
@@ -1755,6 +1836,9 @@ ios-dark-mode-red:
   more-info-header-background: rgba(25, 25, 25, 0.5)
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: rgba(234, 88, 63, 0.4)
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64

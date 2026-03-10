@@ -52,6 +52,9 @@ ios-{{ which }}-mode-{{ color }}{{ suffix }}:
   more-info-header-background: {{ more_info_header_background }}
   lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
   app-header-background-color: {{ app_header_background_color }}
+  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
+  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
   markdown-code-background-color: {{ markdown_code_background_color }}
   code-editor-background-color: {{ code_editor_background_color }}
   clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
