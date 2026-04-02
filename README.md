@@ -134,3 +134,28 @@ for UI components introduced in Home Assistant 2025.5.
 - `app-header-selection-bar-color` — active view tab indicator bar colour
 - `sl-color-primary-600` — active view tab text/icon colour
 - `sl-color-neutral-600` — inactive view tab text/icon colour
+
+## HA 2026.4+ compatibility
+
+HA 2026.4 migrated all input components from Material Design (`ha-textfield`)
+to Web Awesome (`ha-input`) and introduced three new semantic form background
+variables that default to `var(--ha-color-neutral-95)` — near-white (~#f2f2f2).
+
+Without theme overrides, dark mode themes render `select` and other input
+entity rows with a near-white background while `--primary-text-color` remains
+`#FFF`, producing invisible white-on-white text.
+
+## Changes
+
+**`settings-light-dark.yaml`**
+- Added `form_background_color` (light: `var(--secondary-background-color)`,
+  dark: `var(--primary-background-color)`)
+
+**`template.jinja2`**
+- Added three new variables under `# Other`:
+  - `ha-color-form-background`
+  - `ha-color-form-background-hover`
+  - `ha-color-form-background-disabled`
+
+**`themes/ios-themes.yaml`**
+- Regenerated
