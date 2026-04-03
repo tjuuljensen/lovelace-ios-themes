@@ -11,12 +11,11 @@ from PIL import Image, ImageColor
 with open("settings-light-dark.yaml") as f:
     all_settings = yaml.safe_load(f)
 
-COMMIT = "a37376d918fcfe4785be99910dc9a7200ac37da9"
+COMMIT = "80600734bc2af1d4f1cb71901f75ac9ff8ab2c9f"
 
 BASE_URL = (
-    f"https://cdn.jsdelivr.net/gh/basnijholt/lovelace-ios-themes@{COMMIT}/themes"
+    f"https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@{COMMIT}/themes"
 )
-
 
 def parse(x):
     return x if "#" not in x else f'"{x}"'
