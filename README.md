@@ -5,6 +5,8 @@
 [![homeassistant_community](https://img.shields.io/badge/HA%20community-forum-brightgreen)](https://community.home-assistant.io/t/ios-dark-and-light-mode-with-easy-background-change/206215)
 [![Github Stars](https://img.shields.io/github/stars/basnijholt/lovelace-ios-themes)](https://github.com/basnijholt/lovelace-ios-themes)
 
+Forked from `imonlinux/lovelace-ios-themes`, itself a fork of `basnijholt/lovelace-ios-themes`. This repository preserves the original MIT license and includes additional grey-theme variants ported from my earlier fork, `tjuuljensen/lovelace-ios-themes-old`.
+ 
 > The iOS Theme by @basnijholt and modified from @kalkih's [Gist](https://gist.github.com/kalkih/fbe84b371ef7f992c3bd51b235e2c299)
 
 A generalized version of [*iOS Dark Mode Theme*](https://github.com/basnijholt/lovelace-ios-dark-mode-theme)!
