@@ -1932,7 +1932,7 @@ ios-dark-mode-red:
   mini-media-player-icon-color: white
   codemirror-property: var(--accent-color)
 
-ios-dark-grey:
+ios-dark-mode-grey:
   # Global
   background-image: "center / cover no-repeat fixed url('/local/ios-themes/homekit-bg-dark-grey.jpg')"
   lovelace-background: var(--background-image)
@@ -1998,7 +1998,7 @@ ios-dark-grey:
   mini-media-player-icon-color: white
   codemirror-property: var(--accent-color)
 
-ios-light-grey:
+ios-light-mode-grey:
   # Global
   background-image: "center / cover no-repeat fixed url('/local/ios-themes/homekit-bg-light-grey.jpg')"
   lovelace-background: var(--background-image)
