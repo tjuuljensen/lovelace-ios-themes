@@ -14,8 +14,7 @@ ios-{{ which }}-mode-{{ color }}{{ suffix }}:
   primary-background-color: {{ primary_background_color }}  # Main app surface
   secondary-background-color: {{ secondary_background_color }}  # Secondary/card surface
   divider-color: {{ divider_color }}  # Apple systemGray for {{ which }} mode
-
-  light-primary-color: {{ light_primary_color }}  # Used for some icons, including sidebar icons
+  light-primary-color: {{ light_primary_color }}  # Used by some icons, including sidebar icons
 
   # ---------------------------------------------------------------------------
   # Text
@@ -58,10 +57,13 @@ ios-{{ which }}-mode-{{ color }}{{ suffix }}:
   ha-card-border-radius: 20px
   ha-card-border-width: 0  # See issue #82
 
+  clear-background-color: var(--ha-card-background)  # See issue #64
+
+  # Table / list surfaces
+  data-table-background-color: var(--card-background-color)
+  table-header-background-color: var(--secondary-background-color)
   table-row-background-color: var(--primary-background-color)
   table-row-alternative-background-color: var(--secondary-background-color)
-
-  clear-background-color: var(--ha-card-background)  # See issue #64
 
   # ---------------------------------------------------------------------------
   # Sliders and switches
@@ -77,38 +79,64 @@ ios-{{ which }}-mode-{{ color }}{{ suffix }}:
   # ---------------------------------------------------------------------------
   # Dialogs and form controls
   # ---------------------------------------------------------------------------
-  dialog-background-color: {{ dialog_background_color }}  # More-info dialogs, popups, modal surfaces
+  dialog-background-color: {{ dialog_background_color }}  # Dialog / popup surface
+  ha-dialog-surface-background: {{ dialog_background_color }}
   more-info-header-background: {{ more_info_header_background }}
 
-  # Modern HA form background variables
+  # Modern HA form variables
   ha-color-form-background: {{ form_background_color }}
   ha-color-form-background-hover: {{ form_background_color }}
   ha-color-form-background-disabled: {{ form_background_color }}
 
-  # Compatibility for older/custom components still using legacy form vars
+  # Text/border tokens used by modern HA form controls
+  ha-color-text-primary: var(--primary-text-color)
+  ha-color-text-secondary: var(--secondary-text-color)
+  ha-color-border-neutral-loud: var(--divider-color)
+  ha-color-border-neutral-normal: var(--divider-color)
+  ha-color-border-neutral-quiet: var(--divider-color)
+
+  # Legacy input vars still used by MDC-based components
   input-fill-color: {{ form_background_color }}
   input-disabled-fill-color: {{ form_background_color }}
-  mdc-text-field-fill-color: {{ form_background_color }}
-  mdc-text-field-disabled-fill-color: {{ form_background_color }}
-  mdc-select-fill-color: {{ form_background_color }}
-  mdc-select-disabled-fill-color: {{ form_background_color }}
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--secondary-text-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-idle-line-color: var(--divider-color)
+  input-hover-line-color: var(--accent-color)
+  input-dropdown-icon-color: var(--primary-text-color)
+
+  # Explicit MDC aliases
+  mdc-text-field-fill-color: var(--input-fill-color)
+  mdc-text-field-disabled-fill-color: var(--input-disabled-fill-color)
+  mdc-text-field-ink-color: var(--input-ink-color)
+  mdc-text-field-label-ink-color: var(--input-label-ink-color)
+  mdc-text-field-disabled-ink-color: var(--input-disabled-ink-color)
+
+  mdc-select-fill-color: var(--input-fill-color)
+  mdc-select-disabled-fill-color: var(--input-disabled-fill-color)
+  mdc-select-ink-color: var(--input-ink-color)
+  mdc-select-label-ink-color: var(--input-label-ink-color)
+  mdc-select-disabled-ink-color: var(--input-disabled-ink-color)
+
+  # Web Awesome form aliases
+  wa-color-surface-default: var(--card-background-color)
+  wa-color-surface-raised: {{ dialog_background_color }}
+  wa-form-control-background-color: {{ form_background_color }}
+  wa-form-control-value-color: var(--primary-text-color)
+  wa-form-control-placeholder-color: var(--secondary-text-color)
 
   # ---------------------------------------------------------------------------
-  # App header, tabs, and newer HA/HACS semantic colors
+  # App header, tabs, and newer HA / HACS semantic colors
   # ---------------------------------------------------------------------------
   app-header-background-color: {{ app_header_background_color }}
   app-header-text-color: var(--primary-text-color)
-  app-header-selection-bar-color: var(--accent-color)  # Active view tab indicator (HA 2025.5+)
+  app-header-selection-bar-color: var(--accent-color)  # Active view tab indicator
 
-  # Shoelace tab colors (HA 2025.5+)
+  # Shoelace tab colors
   sl-color-primary-600: var(--accent-color)  # Active tab text/icon
   sl-color-neutral-600: var(--app-header-text-color)  # Inactive tab text/icon
 
-  # Semantic text colors used by newer HA/HACS pages
-  ha-color-text-primary: var(--primary-text-color)
-  ha-color-text-secondary: var(--secondary-text-color)
-
-  # Neutral fills used by newer HA/HACS / Web Awesome components
+  # Neutral fills used by newer HA / HACS / Web Awesome pages
   ha-color-fill-neutral-loud-resting: var(--primary-background-color)
   ha-color-fill-neutral-loud-hover: var(--primary-background-color)
   ha-color-fill-neutral-normal-resting: var(--secondary-background-color)
@@ -120,11 +148,6 @@ ios-{{ which }}-mode-{{ color }}{{ suffix }}:
   ha-color-on-neutral-loud: var(--primary-text-color)
   ha-color-on-neutral-normal: var(--primary-text-color)
   ha-color-on-neutral-quiet: var(--primary-text-color)
-
-  # Borders used by newer controls/pages
-  ha-color-border-neutral-loud: var(--divider-color)
-  ha-color-border-neutral-normal: var(--divider-color)
-  ha-color-border-neutral-quiet: var(--divider-color)
 
   # Explicit Web Awesome aliases for components that read wa-* directly
   wa-color-neutral-fill-loud: var(--ha-color-fill-neutral-loud-resting)
