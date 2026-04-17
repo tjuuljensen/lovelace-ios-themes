@@ -17,7 +17,7 @@ more_info_header_background:
   dark: rgba(25, 25, 25, 0.5)
   light: rgba(230, 230, 230, 0.5)
 dialog_background_color:
-  dark: rgba(55, 55, 55, 0.8)
+  dark: rgba(28, 28, 30, 0.92)
   light: rgba(200, 200, 200, 0.8)
 primary_background_color:
   dark: '#2c2c2e'

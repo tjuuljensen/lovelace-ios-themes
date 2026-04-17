@@ -108,20 +108,34 @@ ios-{{ which }}-mode-{{ color }}{{ suffix }}:
   ha-color-text-primary: var(--primary-text-color)
   ha-color-text-secondary: var(--secondary-text-color)
 
-  # Neutral fills used by newer controls/pages
-  ha-color-fill-neutral-quiet-resting: var(--primary-background-color)
-  ha-color-fill-neutral-quiet-hover: var(--primary-background-color)
+  # Neutral fills used by newer HA/HACS / Web Awesome components
+  ha-color-fill-neutral-loud-resting: var(--primary-background-color)
+  ha-color-fill-neutral-loud-hover: var(--primary-background-color)
   ha-color-fill-neutral-normal-resting: var(--secondary-background-color)
   ha-color-fill-neutral-normal-hover: var(--secondary-background-color)
+  ha-color-fill-neutral-quiet-resting: var(--primary-background-color)
+  ha-color-fill-neutral-quiet-hover: var(--primary-background-color)
 
   # Text shown on neutral surfaces
-  ha-color-on-neutral-quiet: var(--primary-text-color)
+  ha-color-on-neutral-loud: var(--primary-text-color)
   ha-color-on-neutral-normal: var(--primary-text-color)
+  ha-color-on-neutral-quiet: var(--primary-text-color)
 
   # Borders used by newer controls/pages
-  ha-color-border-neutral-quiet: var(--divider-color)
-  ha-color-border-neutral-normal: var(--divider-color)
   ha-color-border-neutral-loud: var(--divider-color)
+  ha-color-border-neutral-normal: var(--divider-color)
+  ha-color-border-neutral-quiet: var(--divider-color)
+
+  # Explicit Web Awesome aliases for components that read wa-* directly
+  wa-color-neutral-fill-loud: var(--ha-color-fill-neutral-loud-resting)
+  wa-color-neutral-fill-normal: var(--ha-color-fill-neutral-normal-resting)
+  wa-color-neutral-fill-quiet: var(--ha-color-fill-neutral-quiet-hover)
+  wa-color-neutral-on-loud: var(--ha-color-on-neutral-loud)
+  wa-color-neutral-on-normal: var(--ha-color-on-neutral-normal)
+  wa-color-neutral-on-quiet: var(--ha-color-on-neutral-quiet)
+  wa-color-neutral-border-loud: var(--ha-color-border-neutral-loud)
+  wa-color-neutral-border-normal: var(--ha-color-border-neutral-normal)
+  wa-color-neutral-border-quiet: var(--ha-color-border-neutral-quiet)
 
   # ---------------------------------------------------------------------------
   # Editors and code blocks
