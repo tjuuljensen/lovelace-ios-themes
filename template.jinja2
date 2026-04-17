@@ -2,73 +2,142 @@
 # iOS {{ which.capitalize() }} Mode Theme - {{ color }}
 #
 ios-{{ which }}-mode-{{ color }}{{ suffix }}:
-  # Global
+  # ---------------------------------------------------------------------------
+  # Core colors and backgrounds
+  # ---------------------------------------------------------------------------
   background-image: "center / cover no-repeat fixed url('{{ background }}')"
   lovelace-background: var(--background-image)
-  primary-color: {{ primary_color }}  # from Apple systemOrange {{ which }} mode
-  light-primary-color: {{ light_primary_color }}  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
-  primary-background-color: {{ primary_background_color }}  # systemGray5 {{ which }} mode
-  secondary-background-color: {{ secondary_background_color }}
-  divider-color: {{ divider_color }}  # from Apple systemGray {{ which }} mode
+
+  primary-color: {{ primary_color }}  # Apple systemOrange for {{ which }} mode
   accent-color: rgba(255, 159, 9, 1)
+
+  primary-background-color: {{ primary_background_color }}  # Main app surface
+  secondary-background-color: {{ secondary_background_color }}  # Secondary/card surface
+  divider-color: {{ divider_color }}  # Apple systemGray for {{ which }} mode
+
+  light-primary-color: {{ light_primary_color }}  # Used for some icons, including sidebar icons
+
+  # ---------------------------------------------------------------------------
   # Text
+  # ---------------------------------------------------------------------------
   primary-text-color: {{ primary_text_color }}
   secondary-text-color: {{ secondary_text_color }}
+
   text-primary-color: "#FFF"
-  disabled-text-color: "#555"  # XXX: https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/2
   text-dark-color: "#FFF"
-  # Sidebar Menu
+  disabled-text-color: "#555"  # See issue #2 in original repo
+
+  # ---------------------------------------------------------------------------
+  # Sidebar / navigation drawer
+  # ---------------------------------------------------------------------------
   sidebar-background-color: var(--primary-background-color)
   sidebar-icon-color: var(--light-primary-color)
   sidebar-text-color: {{ sidebar_text_color }}
+
   sidebar-selected-background-color: var(--primary-background-color)
-  sidebar-selected-icon-color: {{ sidebar_selected_icon_color }}  # (light: systemGray5 from iOS light mode, dark: XXX)
+  sidebar-selected-icon-color: {{ sidebar_selected_icon_color }}
   sidebar-selected-text-color: var(--sidebar-selected-icon-color)
-  # States and Badges
+
+  # ---------------------------------------------------------------------------
+  # Entity state colors and badges
+  # ---------------------------------------------------------------------------
   state-icon-color: "#FFF"
-  state-icon-active-color: {{ state_icon_active_color }}  # or make light icons yellow when active: rgba(255, 214, 10, 1)
+  state-icon-active-color: {{ state_icon_active_color }}
   state-icon-unavailable-color: var(--disabled-text-color)
-  # Sliders (paper-slider-* removed in HA 2025.5; ha-slider follows primary/accent color)
-  ha-slider-background: none !important
-  # Labels
+
   label-badge-background-color: "#23232E"
   label-badge-text-color: "#F1F1F1"
-  label-badge-red: {{ label_badge_red }}  # from Apple systemOrange {{ which }} mode
-  # Cards
-  card-background-color: var(--secondary-background-color)  # Unused entities table background
+  label-badge-red: {{ label_badge_red }}  # Apple systemOrange for {{ which }} mode
+
+  # ---------------------------------------------------------------------------
+  # Cards, rows, and general surfaces
+  # ---------------------------------------------------------------------------
+  card-background-color: var(--secondary-background-color)  # Used by some legacy tables/cards
+  ha-card-background: {{ ha_card_background }}
+  rgb-card-background-color: {{ rgb_card_background }}  # See issue #60
   ha-card-border-radius: 20px
-  ha-card-background: {{  ha_card_background }}
-  rgb-card-background-color: {{ rgb_card_background }} # see https://github.com/basnijholt/lovelace-ios-themes/issues/60
-  ha-card-border-width: 0  # https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/82#event-7732695357
-  # Table row
+  ha-card-border-width: 0  # See issue #82
+
   table-row-background-color: var(--primary-background-color)
   table-row-alternative-background-color: var(--secondary-background-color)
-  # Switches (paper-toggle-button-* removed in HA 2025.5)
+
+  clear-background-color: var(--ha-card-background)  # See issue #64
+
+  # ---------------------------------------------------------------------------
+  # Sliders and switches
+  # ---------------------------------------------------------------------------
+  # paper-slider-* removed in HA 2025.5; ha-slider follows primary/accent color
+  ha-slider-background: none !important
+
+  # paper-toggle-button-* removed in HA 2025.5
   switch-checked-color: "#30d257"
-  switch-checked-track-color: {{ switch_checked_track_color }}  # from Apple systemGreen {{ which }} mode
+  switch-checked-track-color: {{ switch_checked_track_color }}  # Apple systemGreen for {{ which }} mode
   switch-checked-button-color: "#FFF"
-  # Compatibility for older / custom components
-  dialog-background-color: {{ dialog_background_color }}  # e.g., background of more-info dialogs
-  ha-color-form-background: {{ form_background_color }}          # select/input bg (HA 2026.4+)
-  ha-color-form-background-hover: {{ form_background_color }}    # hover state
-  ha-color-form-background-disabled: {{ form_background_color }} # disabled state
+
+  # ---------------------------------------------------------------------------
+  # Dialogs and form controls
+  # ---------------------------------------------------------------------------
+  dialog-background-color: {{ dialog_background_color }}  # More-info dialogs, popups, modal surfaces
+  more-info-header-background: {{ more_info_header_background }}
+
+  # Modern HA form background variables
+  ha-color-form-background: {{ form_background_color }}
+  ha-color-form-background-hover: {{ form_background_color }}
+  ha-color-form-background-disabled: {{ form_background_color }}
+
+  # Compatibility for older/custom components still using legacy form vars
   input-fill-color: {{ form_background_color }}
   input-disabled-fill-color: {{ form_background_color }}
   mdc-text-field-fill-color: {{ form_background_color }}
   mdc-text-field-disabled-fill-color: {{ form_background_color }}
   mdc-select-fill-color: {{ form_background_color }}
   mdc-select-disabled-fill-color: {{ form_background_color }}
-  more-info-header-background: {{ more_info_header_background }}
-  lumo-body-text-color: var(--primary-text-color)  # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
+
+  # ---------------------------------------------------------------------------
+  # App header, tabs, and newer HA/HACS semantic colors
+  # ---------------------------------------------------------------------------
   app-header-background-color: {{ app_header_background_color }}
-  app-header-selection-bar-color: var(--accent-color)  # active view tab indicator bar (HA 2025.5+)
-  sl-color-primary-600: var(--accent-color)  # active view tab text/icon color (HA 2025.5+ sl-tab)
-  sl-color-neutral-600: var(--app-header-text-color)  # inactive view tab text/icon color (HA 2025.5+ sl-tab)
+  app-header-text-color: var(--primary-text-color)
+  app-header-selection-bar-color: var(--accent-color)  # Active view tab indicator (HA 2025.5+)
+
+  # Shoelace tab colors (HA 2025.5+)
+  sl-color-primary-600: var(--accent-color)  # Active tab text/icon
+  sl-color-neutral-600: var(--app-header-text-color)  # Inactive tab text/icon
+
+  # Semantic text colors used by newer HA/HACS pages
+  ha-color-text-primary: var(--primary-text-color)
+  ha-color-text-secondary: var(--secondary-text-color)
+
+  # Neutral fills used by newer controls/pages
+  ha-color-fill-neutral-quiet-resting: var(--primary-background-color)
+  ha-color-fill-neutral-quiet-hover: var(--primary-background-color)
+  ha-color-fill-neutral-normal-resting: var(--secondary-background-color)
+  ha-color-fill-neutral-normal-hover: var(--secondary-background-color)
+
+  # Text shown on neutral surfaces
+  ha-color-on-neutral-quiet: var(--primary-text-color)
+  ha-color-on-neutral-normal: var(--primary-text-color)
+
+  # Borders used by newer controls/pages
+  ha-color-border-neutral-quiet: var(--divider-color)
+  ha-color-border-neutral-normal: var(--divider-color)
+  ha-color-border-neutral-loud: var(--divider-color)
+
+  # ---------------------------------------------------------------------------
+  # Editors and code blocks
+  # ---------------------------------------------------------------------------
   markdown-code-background-color: {{ markdown_code_background_color }}
   code-editor-background-color: {{ code_editor_background_color }}
-  clear-background-color: var(--ha-card-background)  # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
-  # Custom
+  codemirror-property: var(--accent-color)
+
+  # ---------------------------------------------------------------------------
+  # Misc / framework compatibility
+  # ---------------------------------------------------------------------------
+  lumo-body-text-color: var(--primary-text-color)  # See issue #42
+
+  # ---------------------------------------------------------------------------
+  # Custom card tweaks
+  # ---------------------------------------------------------------------------
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
   mini-media-player-icon-color: white
-  codemirror-property: var(--accent-color)
