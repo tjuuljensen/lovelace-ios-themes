@@ -12,8 +12,8 @@ Fork/HACS maintenance notes live in [`docs/FORK-MAINTENANCE.md`](docs/FORK-MAINT
 > The iOS Theme by @basnijholt and modified from @kalkih's [Gist](https://gist.github.com/kalkih/fbe84b371ef7f992c3bd51b235e2c299)
 
 A generalized version of [*iOS Dark Mode Theme*](https://github.com/basnijholt/lovelace-ios-dark-mode-theme)!
-This includes both **Dark and Light Mode** and 9 different HomeKit backgrounds.
-Installing this theme adds 36 different themes:
+This includes both **Dark and Light Mode** and 12 different HomeKit backgrounds.
+Installing this theme adds 48 different themes:
 - `ios-light-mode-dark-green`
 - `ios-dark-mode-dark-green`
 - `ios-light-mode-light-blue`
@@ -32,6 +32,12 @@ Installing this theme adds 36 different themes:
 - `ios-dark-mode-light-grey`
 - `ios-light-mode-dark-blue`
 - `ios-dark-mode-dark-blue`
+- `ios-light-mode-magenta-purple`
+- `ios-dark-mode-magenta-purple`
+- `ios-light-mode-navy-purple`
+- `ios-dark-mode-navy-purple`
+- `ios-light-mode-teal-cyan`
+- `ios-dark-mode-teal-cyan`
 - `...` and versions with the `-alternative` suffix
 
 ---
@@ -121,6 +127,15 @@ wget -O /config/www/ios-themes/homekit-bg-dark-grey.jpg https://raw.githubuserco
 
 # Light Grey
 wget -O /config/www/ios-themes/homekit-bg-light-grey.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/master/themes/homekit-bg-light-grey.jpg
+
+# Magenta Purple
+wget -O /config/www/ios-themes/homekit-bg-magenta-purple.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/master/themes/homekit-bg-magenta-purple.jpg
+
+# Navy Purple
+wget -O /config/www/ios-themes/homekit-bg-navy-purple.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/master/themes/homekit-bg-navy-purple.jpg
+
+# Teal Cyan
+wget -O /config/www/ios-themes/homekit-bg-teal-cyan.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/master/themes/homekit-bg-teal-cyan.jpg
 ```
 
 ---
@@ -199,6 +214,9 @@ input_select:
       - red
       - dark-grey
       - light-grey
+      - magenta-purple
+      - navy-purple
+      - teal-cyan
     icon: mdi:format-color-fill
   
 input_boolean:

@@ -48,6 +48,9 @@ BACKGROUND_COLORS = {
     "red": "rgba(234, 88, 63, 0.4)",
     "dark-grey": "rgba(82, 82, 82, 0.4)",
     "light-grey": "rgba(45, 45, 45, 0.4)",
+    "magenta-purple": "rgba(87, 15, 72, 0.4)",
+    "navy-purple": "rgba(14, 20, 60, 0.4)",
+    "teal-cyan": "rgba(5, 65, 77, 0.4)",
 }
 
 fname = Path("themes/ios-themes.yaml")
