@@ -19,8 +19,7 @@ upstream  https://github.com/basnijholt/lovelace-ios-themes.git
 ```
 
 `origin` is the repository Home Assistant / HACS should install from.
-`upstream` is read-only source material for future updates. It should point to
-`basnijholt/lovelace-ios-themes`, not an intermediate fork.
+`upstream` is read-only source material for future updates.
 
 The GitHub default branch for this fork is `gray-theme-only`. That branch is
 the maintained fork branch:
@@ -70,11 +69,6 @@ fork as a HACS custom repository.
    ```
 
 8. Restart Home Assistant or reload themes after installation or updates.
-
-Do not add this repository as a HACS dashboard/plugin repository. If HACS says
-`Repository structure for master is not compliant` and prefixes the message with
-`<Plugin ...>`, the repository was added with the wrong category. Remove that
-custom repository entry and add it again as **Theme**.
 
 For dashboard backgrounds, set this at the dashboard raw config top level:
 
