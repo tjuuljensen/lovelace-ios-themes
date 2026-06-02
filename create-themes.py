@@ -11,10 +11,10 @@ from PIL import Image, ImageColor
 with open("settings-light-dark.yaml") as f:
     all_settings = yaml.safe_load(f)
 
-COMMIT = "a37376d918fcfe4785be99910dc9a7200ac37da9"
+CDN_REF = "master"
 
 BASE_URL = (
-    f"https://cdn.jsdelivr.net/gh/basnijholt/lovelace-ios-themes@{COMMIT}/themes"
+    f"https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@{CDN_REF}/themes"
 )
 
 
@@ -46,12 +46,14 @@ BACKGROUND_COLORS = {
     "light-green": "rgba(114, 188, 139, 0.4)",
     "orange": "rgba(255, 229, 116, 0.4)",
     "red": "rgba(234, 88, 63, 0.4)",
+    "dark-grey": "rgba(82, 82, 82, 0.4)",
+    "light-grey": "rgba(45, 45, 45, 0.4)",
 }
 
 fname = Path("themes/ios-themes.yaml")
 fname.parent.mkdir(parents=True, exist_ok=True)
 
-with fname.open("w") as f:
+with fname.open("w", newline="\n") as f:
     f.write("---\n# From https://github.com/basnijholt/lovelace-ios-themes")
 for background in sorted(Path("themes").glob("homekit-bg-*.jpg")):
     color = background.stem.split("homekit-bg-")[-1]
@@ -83,5 +85,5 @@ for background in sorted(Path("themes").glob("homekit-bg-*.jpg")):
                 suffix=suffix,
             )
 
-            with fname.open("a") as f:
+            with fname.open("a", newline="\n") as f:
                 f.write("\n" + result + "\n")
