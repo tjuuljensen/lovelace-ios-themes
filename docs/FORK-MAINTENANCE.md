@@ -22,6 +22,16 @@ upstream  https://github.com/basnijholt/lovelace-ios-themes.git
 `upstream` is read-only source material for future updates. It should point to
 `basnijholt/lovelace-ios-themes`, not an intermediate fork.
 
+The GitHub default branch for this fork is `gray-theme-only`. That branch is
+the maintained fork branch:
+
+- it starts from `basnijholt/lovelace-ios-themes`
+- it adds only the grey theme variants and fork documentation
+- it is the branch HACS should see when adding this repository as a custom theme
+
+The local `master` branch may still exist as an old historical branch. Do not
+develop on it. Do not merge it into `gray-theme-only`.
+
 As a local safety guard, set the upstream push URL to a disabled value:
 
 ```powershell
@@ -61,58 +71,41 @@ fork as a HACS custom repository.
 
 8. Restart Home Assistant or reload themes after installation or updates.
 
+Do not add this repository as a HACS dashboard/plugin repository. If HACS says
+`Repository structure for master is not compliant` and prefixes the message with
+`<Plugin ...>`, the repository was added with the wrong category. Remove that
+custom repository entry and add it again as **Theme**.
+
 For dashboard backgrounds, set this at the dashboard raw config top level:
 
 ```yaml
 background: var(--background-image)
 ```
 
-## Which Branch Should HACS Use?
+## Branches And Publishing
 
-HACS custom repositories generally track the repository's default branch unless
-you install a specific release or branch through a different workflow.
+The configured repository default branch is `gray-theme-only`. Keep that as the
+source of truth for this fork.
 
-For the simplest setup, make `origin/master` contain the cleaned-up fork:
-
-- based on current `upstream/master`
-- plus the grey theme variants
-- without unrelated local experiments
-
-That is why this command may be useful:
+Normal publishing command:
 
 ```powershell
-git push --force-with-lease origin gray-theme-only:master
+git push origin gray-theme-only
 ```
 
-What it does:
-
-- pushes local branch `gray-theme-only`
-- updates remote branch `origin/master`
-- replaces the current remote `master` history with the cleaned-up history
-- refuses to push if `origin/master` changed since the last fetch
-
-Implications:
-
-- This rewrites the public history of your fork's `master` branch.
-- Existing clones of your fork may need to rebase, reset, or reclone.
-- HACS will see the cleaned-up `master` as the main version.
-- Old experimental commits are no longer on `origin/master`, but they remain
-  recoverable locally from `archive-full-fork-before-baseline` and from any
-  pushed branches that still contain them.
-
-This is reasonable for a personal fork when nobody else depends on its branch
-history. If other people use this fork, prefer pushing `gray-theme-only` as a
-normal branch first and changing the GitHub default branch to it.
-
-Safer preview command:
+If a local clone still has the old branch setup, use this once:
 
 ```powershell
-git push -u origin gray-theme-only
+git branch --set-upstream-to origin/gray-theme-only gray-theme-only
 ```
 
-After checking the pushed branch on GitHub, either change the repository default
-branch to `gray-theme-only` or replace `origin/master` with the force-with-lease
-command above.
+Avoid plain `git push` until `git branch -vv` shows `gray-theme-only` tracking
+`origin/gray-theme-only`.
+
+`master` is not the development branch for this fork. If it exists on GitHub, it
+is only a compatibility or historical branch. Do not force-push `master` unless
+you intentionally want to make `master` match `gray-theme-only` for a tool that
+cannot follow the default branch.
 
 ## Updating From Upstream
 
@@ -149,21 +142,30 @@ file.
 Publish the updated fork:
 
 ```powershell
-git push --force-with-lease origin gray-theme-only:master
+git push origin gray-theme-only
 ```
 
-Use `--force-with-lease`, not plain `--force`, because it checks that the remote
-branch has not moved unexpectedly.
+No force push is needed for normal updates because `gray-theme-only` is the
+default branch.
 
 ## Troubleshooting
 
 ### HACS Still Shows The Old Theme
 
 - Confirm HACS is installed from `https://github.com/tjuuljensen/lovelace-ios-themes`.
-- Confirm the GitHub default branch or `origin/master` contains the grey changes.
+- Confirm the GitHub default branch is `gray-theme-only`.
+- Confirm `origin/gray-theme-only` contains the grey changes.
 - In HACS, redownload or update the theme.
 - Restart Home Assistant or reload themes.
 - Clear browser cache if dashboard assets still look stale.
+
+### HACS Says Repository Structure Is Not Compliant
+
+- Confirm the custom repository category is **Theme**.
+- If it was added as Dashboard or Plugin, remove it from HACS custom
+  repositories and add it again as **Theme**.
+- Confirm `hacs.json` exists in the default branch.
+- Confirm `themes/ios-themes.yaml` exists in the default branch.
 
 ### Grey Theme Names Are Missing
 
@@ -215,6 +217,12 @@ git remote -v
 ```
 
 The upstream push URL should show `DISABLED`.
+
+Then set the correct tracking branch:
+
+```powershell
+git branch --set-upstream-to origin/gray-theme-only gray-theme-only
+```
 
 ### Unsure Whether A Local Change Is Worth Keeping
 
