@@ -21,7 +21,7 @@ upstream  https://github.com/basnijholt/lovelace-ios-themes.git
 `origin` is the repository Home Assistant / HACS should install from.
 `upstream` is read-only source material for future updates.
 
-The GitHub default branch for this fork is `gray-theme-only`. That branch is
+The GitHub default branch for this fork is `feature/new-colors`. That branch is
 the maintained fork branch:
 
 - it starts from `basnijholt/lovelace-ios-themes`
@@ -29,7 +29,7 @@ the maintained fork branch:
 - it is the branch HACS should see when adding this repository as a custom theme
 
 The local `master` branch may still exist as an old historical branch. Do not
-develop on it. Do not merge it into `gray-theme-only`.
+develop on it. Do not merge it into `feature/new-colors`.
 
 As a local safety guard, set the upstream push URL to a disabled value:
 
@@ -78,27 +78,27 @@ background: var(--background-image)
 
 ## Branches And Publishing
 
-The configured repository default branch is `gray-theme-only`. Keep that as the
+The configured repository default branch is `feature/new-colors`. Keep that as the
 source of truth for this fork.
 
 Normal publishing command:
 
 ```powershell
-git push origin gray-theme-only
+git push origin feature/new-colors
 ```
 
 If a local clone still has the old branch setup, use this once:
 
 ```powershell
-git branch --set-upstream-to origin/gray-theme-only gray-theme-only
+git branch --set-upstream-to origin/feature/new-colors feature/new-colors
 ```
 
-Avoid plain `git push` until `git branch -vv` shows `gray-theme-only` tracking
-`origin/gray-theme-only`.
+Avoid plain `git push` until `git branch -vv` shows `feature/new-colors` tracking
+`origin/feature/new-colors`.
 
 `master` is not the development branch for this fork. If it exists on GitHub, it
 is only a compatibility or historical branch. Do not force-push `master` unless
-you intentionally want to make `master` match `gray-theme-only` for a tool that
+you intentionally want to make `master` match `feature/new-colors` for a tool that
 cannot follow the default branch.
 
 ## Updating From Upstream
@@ -106,7 +106,7 @@ cannot follow the default branch.
 When upstream changes, update the fork like this:
 
 ```powershell
-git switch gray-theme-only
+git switch feature/new-colors
 git fetch upstream
 git rebase upstream/master
 python create-themes.py
@@ -136,10 +136,10 @@ file.
 Publish the updated fork:
 
 ```powershell
-git push origin gray-theme-only
+git push origin feature/new-colors
 ```
 
-No force push is needed for normal updates because `gray-theme-only` is the
+No force push is needed for normal updates because `feature/new-colors` is the
 default branch.
 
 ## Troubleshooting
@@ -147,8 +147,8 @@ default branch.
 ### HACS Still Shows The Old Theme
 
 - Confirm HACS is installed from `https://github.com/tjuuljensen/lovelace-ios-themes`.
-- Confirm the GitHub default branch is `gray-theme-only`.
-- Confirm `origin/gray-theme-only` contains the grey changes.
+- Confirm the GitHub default branch is `feature/new-colors`.
+- Confirm `origin/feature/new-colors` contains the grey changes.
 - In HACS, redownload or update the theme.
 - Restart Home Assistant or reload themes.
 - Clear browser cache if dashboard assets still look stale.
@@ -198,10 +198,10 @@ Check branch tracking:
 git branch -vv
 ```
 
-If `gray-theme-only` tracks `upstream/master`, remove that tracking:
+If `feature/new-colors` tracks `upstream/master`, remove that tracking:
 
 ```powershell
-git branch --unset-upstream gray-theme-only
+git branch --unset-upstream feature/new-colors
 ```
 
 Confirm upstream push is disabled:
@@ -215,7 +215,7 @@ The upstream push URL should show `DISABLED`.
 Then set the correct tracking branch:
 
 ```powershell
-git branch --set-upstream-to origin/gray-theme-only gray-theme-only
+git branch --set-upstream-to origin/feature/new-colors feature/new-colors
 ```
 
 ### Unsure Whether A Local Change Is Worth Keeping
