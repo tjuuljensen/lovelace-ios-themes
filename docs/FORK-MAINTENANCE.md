@@ -80,6 +80,27 @@ For dashboard backgrounds, set this at the dashboard raw config top level:
 background: var(--background-image)
 ```
 
+## Generating Themes
+
+Theme definitions are generated from `settings-light-dark.yaml` and
+`template.jinja2` by `create-themes.py`. Background variants are discovered
+from files named `themes/homekit-bg-*.jpg`.
+
+Install the Python dependencies and run the generator from the repository root:
+
+```powershell
+python -m pip install -r requirements.txt
+python create-themes.py
+python -c "import yaml; yaml.safe_load(open('themes/ios-themes.yaml', encoding='utf-8'))"
+git diff --check
+```
+
+The generator writes the combined theme file `themes/ios-themes.yaml`. Adding
+a new background image automatically creates its light, dark, standard, and
+alternative variants. Add an explicit entry to `BACKGROUND_COLORS` in
+`create-themes.py` when the generated overlay color should not be calculated
+from the image.
+
 ## Branches And Publishing
 
 The configured repository default branch is `feature/new-colors`. Keep that as the
