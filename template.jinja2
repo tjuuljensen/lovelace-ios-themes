@@ -12,7 +12,7 @@ ios-{{ which }}-mode-{{ color }}{{ suffix }}:
   primary-background-color: {{ primary_background_color }}  # systemGray5 {{ which }} mode
   secondary-background-color: {{ secondary_background_color }}
   divider-color: {{ divider_color }}  # from Apple systemGray {{ which }} mode
-  accent-color: rgba(255, 159, 9, 1)
+  accent-color: {{ accent_color }}
   # Text
   primary-text-color: {{ primary_text_color }}
   secondary-text-color: {{ secondary_text_color }}
@@ -52,6 +52,14 @@ ios-{{ which }}-mode-{{ color }}{{ suffix }}:
   paper-card-background-color: var(--ha-card-background)
   rgb-card-background-color: {{ rgb_card_background }} # see https://github.com/basnijholt/lovelace-ios-themes/issues/60
   ha-card-border-width: 0  # https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/82#event-7732695357
+{%- if color in ["dark-ferrari", "dark-mercedes"] %}
+  # Formula 1 theme typography. The custom font is optional; the system font remains
+  # the fallback when the local Formula 1 font asset is not installed.
+  ha-card-header-font-family: '"Formula1 Display", var(--ha-font-family-body, ui-sans-serif), system-ui, sans-serif'
+  ha-font-family-heading: '"Formula1 Display", var(--ha-font-family-body, ui-sans-serif), system-ui, sans-serif'
+  paper-font-headline_-_font-family: '"Formula1 Display", var(--ha-font-family-body, ui-sans-serif), system-ui, sans-serif'
+  paper-font-title_-_font-family: '"Formula1 Display", var(--ha-font-family-body, ui-sans-serif), system-ui, sans-serif'
+{%- endif %}
   # Toggles
   paper-toggle-button-checked-button-color: "#484848"
   paper-toggle-button-checked-bar-color: "#484848"
