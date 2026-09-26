@@ -114,7 +114,7 @@ ios-light-mode-blue-red:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-blue-red.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-blue-red.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -328,7 +328,7 @@ ios-dark-mode-blue-red:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-blue-red.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-blue-red.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -542,7 +542,7 @@ ios-light-mode-dark-blue:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-dark-blue.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-dark-blue.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -756,7 +756,7 @@ ios-dark-mode-dark-blue:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-dark-blue.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-dark-blue.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -976,7 +976,7 @@ ios-light-mode-dark-ferrari:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-dark-ferrari.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-dark-ferrari.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -1202,7 +1202,7 @@ ios-dark-mode-dark-ferrari:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-dark-ferrari.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-dark-ferrari.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -1422,7 +1422,7 @@ ios-light-mode-dark-green:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-dark-green.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-dark-green.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -1636,7 +1636,7 @@ ios-dark-mode-dark-green:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-dark-green.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-dark-green.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -1850,7 +1850,7 @@ ios-light-mode-dark-grey:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-dark-grey.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-dark-grey.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -2064,7 +2064,7 @@ ios-dark-mode-dark-grey:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-dark-grey.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-dark-grey.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -2284,7 +2284,7 @@ ios-light-mode-dark-mercedes:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-dark-mercedes.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-dark-mercedes.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -2510,7 +2510,7 @@ ios-dark-mode-dark-mercedes:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-dark-mercedes.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-dark-mercedes.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -2730,7 +2730,7 @@ ios-light-mode-light-blue:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-light-blue.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-light-blue.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -2944,7 +2944,7 @@ ios-dark-mode-light-blue:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-light-blue.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-light-blue.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -3158,7 +3158,7 @@ ios-light-mode-light-green:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-light-green.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-light-green.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -3372,7 +3372,7 @@ ios-dark-mode-light-green:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-light-green.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-light-green.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -3586,7 +3586,7 @@ ios-light-mode-light-grey:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-light-grey.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-light-grey.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -3800,7 +3800,7 @@ ios-dark-mode-light-grey:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-light-grey.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-light-grey.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -4014,7 +4014,7 @@ ios-light-mode-magenta-purple:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-magenta-purple.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-magenta-purple.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -4228,7 +4228,7 @@ ios-dark-mode-magenta-purple:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-magenta-purple.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-magenta-purple.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -4442,7 +4442,7 @@ ios-light-mode-navy-purple:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-navy-purple.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-navy-purple.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -4656,7 +4656,7 @@ ios-dark-mode-navy-purple:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-navy-purple.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-navy-purple.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -4870,7 +4870,7 @@ ios-light-mode-orange:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-orange.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-orange.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -5084,7 +5084,7 @@ ios-dark-mode-orange:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-orange.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-orange.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -5298,7 +5298,7 @@ ios-light-mode-red:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-red.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-red.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -5512,7 +5512,7 @@ ios-dark-mode-red:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-red.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-red.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -5726,7 +5726,7 @@ ios-light-mode-teal-cyan:
   modes:
     light: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-teal-cyan.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-teal-cyan.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9409"  # from Apple systemOrange light mode
   light-primary-color: "#2c2c2e"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)
@@ -5940,7 +5940,7 @@ ios-dark-mode-teal-cyan:
   modes:
     dark: {}
   # Global
-  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@feature/new-colors/themes/homekit-bg-teal-cyan.jpg')"
+  background-image: "center / cover no-repeat fixed url('https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@master/themes/homekit-bg-teal-cyan.jpg')"
   lovelace-background: var(--background-image)
   primary-color: "#ff9f09"  # from Apple systemOrange dark mode
   light-primary-color: "#B6B6C1"  # (icons on left menu) (light: systemGray5 from iOS dark mode, dark: XXX)

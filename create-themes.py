@@ -11,7 +11,7 @@ from PIL import Image, ImageColor
 with open("settings-light-dark.yaml") as f:
     all_settings = yaml.safe_load(f)
 
-CDN_REF = "feature/new-colors"
+CDN_REF = "master"
 
 BASE_URL = (
     f"https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@{CDN_REF}/themes"

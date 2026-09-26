@@ -127,16 +127,16 @@ wget -O /config/www/ios-themes/homekit-bg-blue-red.jpg https://raw.githubusercon
 wget -O /config/www/ios-themes/homekit-bg-red.jpg https://raw.githubusercontent.com/basnijholt/lovelace-ios-themes/master/themes/homekit-bg-red.jpg
 
 # Dark Grey
-wget -O /config/www/ios-themes/homekit-bg-dark-grey.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/feature/new-colors/themes/homekit-bg-dark-grey.jpg
+wget -O /config/www/ios-themes/homekit-bg-dark-grey.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/master/themes/homekit-bg-dark-grey.jpg
 
 # Light Grey
-wget -O /config/www/ios-themes/homekit-bg-light-grey.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/feature/new-colors/themes/homekit-bg-light-grey.jpg
+wget -O /config/www/ios-themes/homekit-bg-light-grey.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/master/themes/homekit-bg-light-grey.jpg
 
 # Formula 1 - Ferrari
-wget -O /config/www/ios-themes/homekit-bg-dark-ferrari.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/feature/new-colors/themes/homekit-bg-dark-ferrari.jpg
+wget -O /config/www/ios-themes/homekit-bg-dark-ferrari.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/master/themes/homekit-bg-dark-ferrari.jpg
 
 # Formula 1 - Mercedes
-wget -O /config/www/ios-themes/homekit-bg-dark-mercedes.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/feature/new-colors/themes/homekit-bg-dark-mercedes.jpg
+wget -O /config/www/ios-themes/homekit-bg-dark-mercedes.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/master/themes/homekit-bg-dark-mercedes.jpg
 
 # Magenta Purple
 wget -O /config/www/ios-themes/homekit-bg-magenta-purple.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/master/themes/homekit-bg-magenta-purple.jpg

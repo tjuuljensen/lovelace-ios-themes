@@ -21,15 +21,16 @@ upstream  https://github.com/basnijholt/lovelace-ios-themes.git
 `origin` is the repository Home Assistant / HACS should install from.
 `upstream` is read-only source material for future updates.
 
-The GitHub default branch for this fork is `feature/new-colors`. That branch is
-the maintained fork branch:
+The GitHub default branch for this fork is `master`. That branch is the
+maintained HACS branch:
 
 - it starts from `basnijholt/lovelace-ios-themes`
-- it adds only the grey theme variants and fork documentation
+- it adds the grey, color, and Formula 1 theme variants
 - it is the branch HACS should see when adding this repository as a custom theme
 
-The local `master` branch may still exist as an old historical branch. Do not
-develop on it. Do not merge it into `feature/new-colors`.
+Keep `master` based on `upstream/master` and apply the fork-specific patch on
+top of it. The old `feature/new-colors` branch is retained only as historical
+source material.
 
 As a local safety guard, set the upstream push URL to a disabled value:
 
@@ -103,37 +104,35 @@ from the image.
 
 ## Branches And Publishing
 
-The configured repository default branch is `feature/new-colors`. Keep that as the
-source of truth for this fork.
+The configured repository default branch is `master`. Keep that as the source
+of truth for this fork.
 
 Normal publishing command:
 
 ```powershell
-git push origin feature/new-colors
+git push origin master
 ```
 
 If a local clone still has the old branch setup, use this once:
 
 ```powershell
-git branch --set-upstream-to origin/feature/new-colors feature/new-colors
+git branch --set-upstream-to origin/master master
 ```
 
-Avoid plain `git push` until `git branch -vv` shows `feature/new-colors` tracking
-`origin/feature/new-colors`.
+Avoid plain `git push` until `git branch -vv` shows `master` tracking
+`origin/master`.
 
-`master` is not the development branch for this fork. If it exists on GitHub, it
-is only a compatibility or historical branch. Do not force-push `master` unless
-you intentionally want to make `master` match `feature/new-colors` for a tool that
-cannot follow the default branch.
+The HACS package and generated CDN URLs intentionally use `master`, so changes
+must be regenerated and committed there before publishing.
 
 ## Updating From Upstream
 
 When upstream changes, update the fork like this:
 
 ```powershell
-git switch feature/new-colors
+git switch master
 git fetch upstream
-git rebase upstream/master
+git merge upstream/master
 python create-themes.py
 python -m py_compile create-themes.py
 python -c "import yaml; yaml.safe_load(open('themes/ios-themes.yaml', encoding='utf-8'))"
@@ -161,19 +160,19 @@ file.
 Publish the updated fork:
 
 ```powershell
-git push origin feature/new-colors
+git push origin master
 ```
 
-No force push is needed for normal updates because `feature/new-colors` is the
-default branch.
+No force push is needed for normal updates because `master` is the default
+branch.
 
 ## Troubleshooting
 
 ### HACS Still Shows The Old Theme
 
 - Confirm HACS is installed from `https://github.com/tjuuljensen/lovelace-ios-themes`.
-- Confirm the GitHub default branch is `feature/new-colors`.
-- Confirm `origin/feature/new-colors` contains the grey changes.
+- Confirm the GitHub default branch is `master`.
+- Confirm `origin/master` contains the grey, color, and Formula 1 changes.
 - In HACS, redownload or update the theme.
 - Restart Home Assistant or reload themes.
 - Clear browser cache if dashboard assets still look stale.
@@ -206,7 +205,7 @@ python create-themes.py
 ### Grey Backgrounds Do Not Load
 
 The standard theme variants use jsDelivr URLs generated from `create-themes.py`
-and the maintained `feature/new-colors` branch.
+and the maintained `master` branch.
 The alternative variants use local `/local/ios-themes/...` background paths.
 
 Check:
@@ -224,7 +223,7 @@ Check branch tracking:
 git branch -vv
 ```
 
-If `feature/new-colors` tracks `upstream/master`, remove that tracking:
+If the historical `feature/new-colors` branch tracks `upstream/master`, remove that tracking:
 
 ```powershell
 git branch --unset-upstream feature/new-colors
@@ -241,7 +240,7 @@ The upstream push URL should show `DISABLED`.
 Then set the correct tracking branch:
 
 ```powershell
-git branch --set-upstream-to origin/feature/new-colors feature/new-colors
+git branch --set-upstream-to origin/master master
 ```
 
 ### Unsure Whether A Local Change Is Worth Keeping
