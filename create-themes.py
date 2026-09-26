@@ -11,7 +11,7 @@ from PIL import Image, ImageColor
 with open("settings-light-dark.yaml") as f:
     all_settings = yaml.safe_load(f)
 
-CDN_REF = "master"
+CDN_REF = "feature/new-colors"
 
 BASE_URL = (
     f"https://cdn.jsdelivr.net/gh/tjuuljensen/lovelace-ios-themes@{CDN_REF}/themes"
@@ -48,9 +48,36 @@ BACKGROUND_COLORS = {
     "red": "rgba(234, 88, 63, 0.4)",
     "dark-grey": "rgba(82, 82, 82, 0.4)",
     "light-grey": "rgba(45, 45, 45, 0.4)",
+    "dark-ferrari": "rgba(104, 3, 2, 0.4)",
+    "dark-mercedes": "rgba(22, 35, 39, 0.4)",
     "magenta-purple": "rgba(87, 15, 72, 0.4)",
     "navy-purple": "rgba(14, 20, 60, 0.4)",
     "teal-cyan": "rgba(5, 65, 77, 0.4)",
+}
+
+FORMULA_THEME_COLORS = {
+    "dark-ferrari": {
+        "accent_color": "rgba(225, 6, 0, 1)",
+        "ha_card_background": {
+            "dark": "rgba(21, 5, 5, 0.72)",
+            "light": "rgba(255, 248, 248, 0.82)",
+        },
+        "rgb_card_background": {
+            "dark": "rgb(21, 5, 5)",
+            "light": "rgb(255, 248, 248)",
+        },
+    },
+    "dark-mercedes": {
+        "accent_color": "rgba(0, 210, 190, 1)",
+        "ha_card_background": {
+            "dark": "rgba(4, 15, 17, 0.72)",
+            "light": "rgba(242, 255, 253, 0.82)",
+        },
+        "rgb_card_background": {
+            "dark": "rgb(4, 15, 17)",
+            "light": "rgb(242, 255, 253)",
+        },
+    },
 }
 
 fname = Path("themes/ios-themes.yaml")
@@ -67,6 +94,12 @@ for background in sorted(Path("themes").glob("homekit-bg-*.jpg")):
     for which in ["light", "dark"]:
         for standard in [False, True]:
             settings = {k: parse(v[which]) for k, v in all_settings.items()}
+            settings["accent_color"] = "rgba(255, 159, 9, 1)"
+            if color in FORMULA_THEME_COLORS:
+                formula_colors = FORMULA_THEME_COLORS[color]
+                settings["accent_color"] = formula_colors["accent_color"]
+                settings["ha_card_background"] = formula_colors["ha_card_background"][which]
+                settings["rgb_card_background"] = formula_colors["rgb_card_background"][which]
 
             if standard:
                 settings["state_icon_active_color"] = "rgba(255, 214, 10, 1)"

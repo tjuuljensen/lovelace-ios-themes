@@ -12,8 +12,8 @@ Fork/HACS maintenance notes live in [`docs/FORK-MAINTENANCE.md`](docs/FORK-MAINT
 > The iOS Theme by @basnijholt and modified from @kalkih's [Gist](https://gist.github.com/kalkih/fbe84b371ef7f992c3bd51b235e2c299)
 
 A generalized version of [*iOS Dark Mode Theme*](https://github.com/basnijholt/lovelace-ios-dark-mode-theme)!
-This includes both **Dark and Light Mode** and 12 different HomeKit backgrounds.
-Installing this theme adds 48 different themes:
+This includes both **Dark and Light Mode** and 14 different HomeKit backgrounds.
+Installing this theme adds 56 different themes:
 - `ios-light-mode-dark-green`
 - `ios-dark-mode-dark-green`
 - `ios-light-mode-light-blue`
@@ -30,6 +30,10 @@ Installing this theme adds 48 different themes:
 - `ios-dark-mode-dark-grey`
 - `ios-light-mode-light-grey`
 - `ios-dark-mode-light-grey`
+- `ios-light-mode-dark-ferrari`
+- `ios-dark-mode-dark-ferrari`
+- `ios-light-mode-dark-mercedes`
+- `ios-dark-mode-dark-mercedes`
 - `ios-light-mode-dark-blue`
 - `ios-dark-mode-dark-blue`
 - `ios-light-mode-magenta-purple`
@@ -123,10 +127,16 @@ wget -O /config/www/ios-themes/homekit-bg-blue-red.jpg https://raw.githubusercon
 wget -O /config/www/ios-themes/homekit-bg-red.jpg https://raw.githubusercontent.com/basnijholt/lovelace-ios-themes/master/themes/homekit-bg-red.jpg
 
 # Dark Grey
-wget -O /config/www/ios-themes/homekit-bg-dark-grey.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/master/themes/homekit-bg-dark-grey.jpg
+wget -O /config/www/ios-themes/homekit-bg-dark-grey.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/feature/new-colors/themes/homekit-bg-dark-grey.jpg
 
 # Light Grey
-wget -O /config/www/ios-themes/homekit-bg-light-grey.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/master/themes/homekit-bg-light-grey.jpg
+wget -O /config/www/ios-themes/homekit-bg-light-grey.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/feature/new-colors/themes/homekit-bg-light-grey.jpg
+
+# Formula 1 - Ferrari
+wget -O /config/www/ios-themes/homekit-bg-dark-ferrari.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/feature/new-colors/themes/homekit-bg-dark-ferrari.jpg
+
+# Formula 1 - Mercedes
+wget -O /config/www/ios-themes/homekit-bg-dark-mercedes.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/feature/new-colors/themes/homekit-bg-dark-mercedes.jpg
 
 # Magenta Purple
 wget -O /config/www/ios-themes/homekit-bg-magenta-purple.jpg https://raw.githubusercontent.com/tjuuljensen/lovelace-ios-themes/master/themes/homekit-bg-magenta-purple.jpg
@@ -214,6 +224,8 @@ input_select:
       - red
       - dark-grey
       - light-grey
+      - dark-ferrari
+      - dark-mercedes
       - magenta-purple
       - navy-purple
       - teal-cyan
@@ -231,5 +243,5 @@ Then add `input_select.theme`, `input_boolean.theme_alternative`, and `input_boo
 
 ## How does the code work
 
-All the **36(!)** themes in [`themes/`](themes/) are **automatically generated** using [`create-themes.py`](create-themes.py) and the information in [`settings-light-dark.yaml`](settings-light-dark.yaml) is passed into [`template.jinja2`](template.jinja2).
+All the themes in [`themes/`](themes/) are **automatically generated** using [`create-themes.py`](create-themes.py) and the information in [`settings-light-dark.yaml`](settings-light-dark.yaml) is passed into [`template.jinja2`](template.jinja2).
 The resulting file is [`themes/ios-themes.yaml`](themes/ios-themes.yaml) which contains all variants (different backgrounds and dark/light mode).

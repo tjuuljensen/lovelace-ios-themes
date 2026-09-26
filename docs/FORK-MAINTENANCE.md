@@ -5,7 +5,7 @@ This repository is a personal fork of `basnijholt/lovelace-ios-themes`.
 The maintenance goal is simple:
 
 - Let upstream development drive fixes and compatibility updates.
-- Keep only the local grey theme variants in this fork.
+- Keep the local grey and Formula 1 theme variants in this fork.
 - Avoid carrying unrelated Home Assistant frontend experiments unless they are
   intentionally reintroduced as separate, documented changes.
 
@@ -37,13 +37,17 @@ As a local safety guard, set the upstream push URL to a disabled value:
 git remote set-url --push upstream DISABLED
 ```
 
-The fork should normally contain only these local differences from upstream:
+The fork should normally contain these local differences from upstream:
 
 - `themes/homekit-bg-dark-grey.jpg`
 - `themes/homekit-bg-light-grey.jpg`
+- `themes/homekit-bg-dark-ferrari.jpg`
+- `themes/homekit-bg-dark-mercedes.jpg`
 - `dark-grey` and `light-grey` entries in `create-themes.py`
+- `dark-ferrari` and `dark-mercedes` entries in `create-themes.py`
+- Formula 1 header font variables in `template.jinja2`
 - regenerated `themes/ios-themes.yaml`
-- small README/documentation updates explaining the grey variants
+- small README/documentation updates explaining the grey and Formula 1 variants
 
 ## HACS Setup
 
@@ -180,7 +184,8 @@ python create-themes.py
 
 ### Grey Backgrounds Do Not Load
 
-The standard theme variants use jsDelivr URLs generated from `create-themes.py`.
+The standard theme variants use jsDelivr URLs generated from `create-themes.py`
+and the maintained `feature/new-colors` branch.
 The alternative variants use local `/local/ios-themes/...` background paths.
 
 Check:
